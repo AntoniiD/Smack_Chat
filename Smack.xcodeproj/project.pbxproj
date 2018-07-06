@@ -11,11 +11,12 @@
 		5B776DA5A21A8A63F7A891C3 /* Pods_SmackUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43CD41619EF9445E7C143104 /* Pods_SmackUITests.framework */; };
 		84404E2E20EDB0D600B9EB72 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84404E2C20EDB0D600B9EB72 /* SWRevealViewController.m */; };
 		844EFCE420ED60B100DE2207 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844EFCE320ED60B100DE2207 /* AppDelegate.swift */; };
-		844EFCE620ED60B100DE2207 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844EFCE520ED60B100DE2207 /* ViewController.swift */; };
 		844EFCE920ED60B100DE2207 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844EFCE720ED60B100DE2207 /* Main.storyboard */; };
 		844EFCEB20ED60B400DE2207 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844EFCEA20ED60B400DE2207 /* Assets.xcassets */; };
 		844EFCEE20ED60B400DE2207 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844EFCEC20ED60B400DE2207 /* LaunchScreen.storyboard */; };
 		844EFCF920ED60B400DE2207 /* SmackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844EFCF820ED60B400DE2207 /* SmackUITests.swift */; };
+		84F141C220EEF3BC00173F29 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F141C120EEF3BC00173F29 /* ChatVC.swift */; };
+		84F141C420EEF3CB00173F29 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F141C320EEF3CB00173F29 /* ChannelVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,6 @@
 		84404E2D20EDB0D600B9EB72 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		844EFCE020ED60B100DE2207 /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844EFCE320ED60B100DE2207 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		844EFCE520ED60B100DE2207 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		844EFCE820ED60B100DE2207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		844EFCEA20ED60B400DE2207 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		844EFCED20ED60B400DE2207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -45,6 +45,8 @@
 		844EFCF420ED60B400DE2207 /* SmackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		844EFCF820ED60B400DE2207 /* SmackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmackUITests.swift; sourceTree = "<group>"; };
 		844EFCFA20ED60B400DE2207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F141C120EEF3BC00173F29 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		84F141C320EEF3CB00173F29 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		A5CE2154832BE686F94BD214 /* Pods-SmackUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmackUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmackUITests/Pods-SmackUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DDE69A113143DEB85BD6E1F1 /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
 		FDD7F09122B0816475C7EA88 /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,9 +116,11 @@
 		844EFCE220ED60B100DE2207 /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				84F141C020EEF39C00173F29 /* Model */,
+				84F141BF20EEF39600173F29 /* View */,
+				84F141BE20EEF38900173F29 /* Controller */,
 				84404E2A20EDB02800B9EB72 /* Supporting Files */,
 				844EFCE320ED60B100DE2207 /* AppDelegate.swift */,
-				844EFCE520ED60B100DE2207 /* ViewController.swift */,
 				844EFCE720ED60B100DE2207 /* Main.storyboard */,
 				844EFCEA20ED60B400DE2207 /* Assets.xcassets */,
 				844EFCEC20ED60B400DE2207 /* LaunchScreen.storyboard */,
@@ -132,6 +136,29 @@
 				844EFCFA20ED60B400DE2207 /* Info.plist */,
 			);
 			path = SmackUITests;
+			sourceTree = "<group>";
+		};
+		84F141BE20EEF38900173F29 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84F141C120EEF3BC00173F29 /* ChatVC.swift */,
+				84F141C320EEF3CB00173F29 /* ChannelVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84F141BF20EEF39600173F29 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84F141C020EEF39C00173F29 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		86DB5E0AB40FD5B068BF2333 /* Frameworks */ = {
@@ -311,7 +338,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				844EFCE620ED60B100DE2207 /* ViewController.swift in Sources */,
+				84F141C420EEF3CB00173F29 /* ChannelVC.swift in Sources */,
+				84F141C220EEF3BC00173F29 /* ChatVC.swift in Sources */,
 				844EFCE420ED60B100DE2207 /* AppDelegate.swift in Sources */,
 				84404E2E20EDB0D600B9EB72 /* SWRevealViewController.m in Sources */,
 			);
